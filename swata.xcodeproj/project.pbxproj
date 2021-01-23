@@ -14,6 +14,9 @@
 		BC32517225AA56870027841A /* swata.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC32517025AA56870027841A /* swata.xcdatamodeld */; };
 		BC32517425AA56890027841A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC32517325AA56890027841A /* Assets.xcassets */; };
 		BC32517725AA56890027841A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC32517525AA56890027841A /* LaunchScreen.storyboard */; };
+		BC32518825AB56B80027841A /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC32518725AB56B80027841A /* homeViewController.swift */; };
+		BC3C687325AF868600F4ECDC /* urlRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C687225AF868600F4ECDC /* urlRequestViewController.swift */; };
+		BC4B05DE25B73EC700A32955 /* dataRec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4B05DD25B73EC700A32955 /* dataRec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		BC32517325AA56890027841A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC32517625AA56890027841A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC32517825AA56890027841A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC32518725AB56B80027841A /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
+		BC3C687225AF868600F4ECDC /* urlRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = urlRequestViewController.swift; sourceTree = "<group>"; };
+		BC4B05DD25B73EC700A32955 /* dataRec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataRec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +64,11 @@
 		BC32516625AA56870027841A /* swata */ = {
 			isa = PBXGroup;
 			children = (
+				BC3C687425AF894000F4ECDC /* models */,
+				BC32518225AA69570027841A /* HTTPrequest */,
+				BC32518025AA68720027841A /* viewController */,
 				BC32516725AA56870027841A /* AppDelegate.swift */,
 				BC32516925AA56870027841A /* SceneDelegate.swift */,
-				BC32516B25AA56870027841A /* ViewController.swift */,
 				BC32516D25AA56870027841A /* Main.storyboard */,
 				BC32517325AA56890027841A /* Assets.xcassets */,
 				BC32517525AA56890027841A /* LaunchScreen.storyboard */,
@@ -68,6 +76,31 @@
 				BC32517025AA56870027841A /* swata.xcdatamodeld */,
 			);
 			path = swata;
+			sourceTree = "<group>";
+		};
+		BC32518025AA68720027841A /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				BC32516B25AA56870027841A /* ViewController.swift */,
+				BC32518725AB56B80027841A /* homeViewController.swift */,
+			);
+			path = viewController;
+			sourceTree = "<group>";
+		};
+		BC32518225AA69570027841A /* HTTPrequest */ = {
+			isa = PBXGroup;
+			children = (
+				BC3C687225AF868600F4ECDC /* urlRequestViewController.swift */,
+			);
+			path = HTTPrequest;
+			sourceTree = "<group>";
+		};
+		BC3C687425AF894000F4ECDC /* models */ = {
+			isa = PBXGroup;
+			children = (
+				BC4B05DD25B73EC700A32955 /* dataRec.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +175,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC32516C25AA56870027841A /* ViewController.swift in Sources */,
+				BC32518825AB56B80027841A /* homeViewController.swift in Sources */,
+				BC3C687325AF868600F4ECDC /* urlRequestViewController.swift in Sources */,
 				BC32516825AA56870027841A /* AppDelegate.swift in Sources */,
+				BC4B05DE25B73EC700A32955 /* dataRec.swift in Sources */,
 				BC32517225AA56870027841A /* swata.xcdatamodeld in Sources */,
 				BC32516A25AA56870027841A /* SceneDelegate.swift in Sources */,
 			);
@@ -220,7 +256,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -274,7 +310,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
